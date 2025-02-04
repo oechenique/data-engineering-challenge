@@ -1,0 +1,46 @@
+services:
+  db:
+    image: postgres:latest
+    container_name: postgres_db
+    restart: always
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: ToKy04g@9GaE
+      POSTGRES_DB: globant_db
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:  # 🔥 Agregar un chequeo de salud
+      test: ["CMD", "pg_isready", "-U", "postgres"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    networks:
+      - app_network
+
+  api:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile
+    container_name: globant_api
+    restart: always
+    depends_on:
+      db:
+        condition: service_healthy  # 🔥 Espera hasta que PostgreSQL esté listo
+    environment:
+      DB_USER: postgres
+      DB_PASSWORD: ToKy04g@9GaE
+      DB_HOST: db  # Asegurar que sea "db"
+      DB_PORT: 5432
+      DB_NAME: globant_db
+    ports:
+      - "8000:8000"
+    networks:
+      - app_network
+
+networks:
+  app_network:
+
+volumes:
+  postgres_data:
