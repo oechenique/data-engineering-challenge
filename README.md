@@ -1,6 +1,6 @@
 # 🚀 Data Engineering Challenge
 
-こんにちは！Welcome to the Data Engineering Challenge solution for Globant, showcasing a robust and scalable approach to historical data migration and analysis using Python and PostgreSQL.
+こんにちは！Welcome to the Data Engineering Challenge solution, showcasing a robust and scalable approach to historical data migration and analysis using Python and PostgreSQL.
 
 ## Overview
 This project demonstrates a comprehensive data engineering solution with key capabilities:
@@ -47,7 +47,7 @@ The solution offers significant advantages for data engineering challenges:
 ### Quick Setup
 1. Clone the repository
 ```bash
-git clone https://github.com/[your-username]/globant-data-engineering-challenge.git
+git clone https://github.com/[your-username]/data-engineering-challenge.git
 cd data-engineering-challenge
 ```
 
@@ -135,6 +135,6 @@ pytest tests/
 [![GeoAnalytics Badge](https://img.shields.io/badge/-GeoAnalytics_Site-2ecc71?style=flat&logo=google-earth&logoColor=white&link=https://oechenique.github.io/geoanalytics/)](https://oechenique.github.io/geoanalytics/)
 [![Discord Badge](https://img.shields.io/badge/-Gastón|ガストン-5865F2?style=flat&logo=discord&logoColor=white&link=https://discord.com/users/gastonechenique)](https://discord.com/users/gastonechenique)
 
-Developed as part of the Globant Data Engineering Challenge - 2025
+Developed as part of a Data Engineering Challenge - 2025
 
 よろしくお願いします！Let's transform data engineering together!
