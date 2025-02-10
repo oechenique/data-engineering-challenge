@@ -1,4 +1,4 @@
-# 🚀 Globant Data Engineering Challenge
+# 🚀 Data Engineering Challenge
 
 こんにちは！Welcome to the Data Engineering Challenge solution for Globant, showcasing a robust and scalable approach to historical data migration and analysis using Python and PostgreSQL.
 
@@ -48,7 +48,7 @@ The solution offers significant advantages for data engineering challenges:
 1. Clone the repository
 ```bash
 git clone https://github.com/[your-username]/globant-data-engineering-challenge.git
-cd globant-data-engineering-challenge
+cd data-engineering-challenge
 ```
 
 2. Create virtual environment
